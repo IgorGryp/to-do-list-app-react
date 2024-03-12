@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(89deg, #a1c4fd 10%, #c2e9fb 90%);
+}
+.App {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+}
+.input {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+}
+.input {
+  margin-bottom: 2rem;
+}
+input {
+  padding: 0rem 0.5rem;
+  width: 37rem;
+  font-size: 1.2rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 2px gray;
+  background: rgba(255, 255, 255, 0);
+  outline: none;
+}
+.add-button {
+  width: 3rem;
+  height: 3rem;
+  font-weight: bold;
+  background-color: #f5c650;
+  border: none;
+  cursor: pointer;
+}
+.add-button-icon {
+  font-size: 2.5rem;
+  color: white;
+}
+ul {
+  width: fit-content;
+}
+.star-button {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.star-button-icon {
+  font-size: 1.8rem;
+  color: white;
+}
+.list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+}
+.task {
+  list-style: none;
+  width: 31rem;
+  line-height: 3rem;
+  text-align: start;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+.check-button {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.8rem;
+  color: white;
+  margin: 0;
+  /* border-radius: 0px; */
+  cursor: pointer;
+  border: none;
+  outline: none;
+  /* -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; */
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.delete-button {
+  width: 3rem;
+  height: 3rem;
+  background-color: #f5c650;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.delete-button-icon {
+  font-size: 1.8rem;
+  color: white;
+}
+.category-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#category-select {
+  width: 20rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-size-adjust: 0.3;
+  margin-bottom: 2rem;
+}
+select option {
+  width: 20rem;
+}
+.todo-list {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  input {
+    width: 32rem;
+  }
+  .task {
+    width: 26rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .add-button {
+    width: 2rem;
+    height: 2rem;
+  }
+  .add-button-icon {
+    font-size: 1.5rem;
+  }
+  input {
+    width: 28rem;
+  }
+  .star-button {
+    width: 2rem;
+    height: 2rem;
+  }
+  .star-button-icon {
+    font-size: 1rem;
+  }
+  .task {
+    width: 24rem;
+    line-height: 2rem;
+  }
+  .check-button {
+    width: 2rem;
+    height: 2rem;
+  }
+  .delete-button {
+    width: 2rem;
+    height: 2rem;
+  }
+  .delete-button-icon {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 492px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  input {
+    width: 20rem;
+    font-size: 1rem;
+  }
+  .task {
+    width: 16rem;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 368px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+  input {
+    width: 18rem;
+    font-size: 1rem;
+  }
+  .task {
+    width: 14rem;
+    font-size: 1rem;
+  }
+  #category-select {
+    width: 18rem;
+  }
+}
