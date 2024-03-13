@@ -82,11 +82,13 @@ ul {
 .task {
   list-style: none;
   width: 31rem;
-  line-height: 3rem;
+  height: 3rem;
   text-align: start;
   color: white;
   background-color: rgba(0, 0, 0, 0.2);
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .check-button {
   width: 3rem;
@@ -173,7 +175,7 @@ select option {
   }
   .task {
     width: 24rem;
-    line-height: 2.4rem;
+    height: 2.4rem;
   }
   .check-button {
     width: 2.4rem;
