@@ -146,11 +146,11 @@ select option {
 }
 @media screen and (max-width: 576px) {
   .add-button {
-    width: 2rem;
-    height: 2rem;
+    width: 2.4rem;
+    height: 2.4rem;
   }
   .add-button-icon {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   input {
     width: 28rem;
