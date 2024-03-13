@@ -156,26 +156,26 @@ select option {
     width: 28rem;
   }
   .star-button {
-    width: 2rem;
-    height: 2rem;
+    width: 2.4rem;
+    height: 2.4rem;
   }
   .star-button-icon {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
   .task {
     width: 24rem;
-    line-height: 2rem;
+    line-height: 2.4rem;
   }
   .check-button {
-    width: 2rem;
-    height: 2rem;
+    width: 2.4rem;
+    height: 2.4rem;
   }
   .delete-button {
-    width: 2rem;
-    height: 2rem;
+    width: 2.4rem;
+    height: 2.4rem;
   }
   .delete-button-icon {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 492px) {
