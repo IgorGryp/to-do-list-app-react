@@ -47,7 +47,7 @@ input {
   width: 3rem;
   height: 3rem;
   font-weight: bold;
-  background-color: #f5c650;
+  background-color: #ffe180;
   border: none;
   cursor: pointer;
 }
@@ -106,7 +106,7 @@ ul {
 .delete-button {
   width: 3rem;
   height: 3rem;
-  background-color: #f5c650;
+  background-color: #ffe180;
   border: none;
   cursor: pointer;
   font-weight: bold;

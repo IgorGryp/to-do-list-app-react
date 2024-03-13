@@ -13,7 +13,7 @@ function Todo({ todo, toggleStarIcon, toggleCheckIcon, checkOffTodo, deleteTask 
           icon={faStar}
           className="star-button-icon"
           style={{
-            color: todo.star ? '#f5c650' : null,
+            color: todo.star ? '#ffe180' : null,
           }}
         />
       </button>
