@@ -3,6 +3,7 @@ import { v4 as uuidv4 } from 'uuid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquarePlus } from '@fortawesome/free-regular-svg-icons';
 import Todolist from './Todolist';
+import ToDoImg from './images/todo-img.png';
 
 function App() {
   const [userInput, setUserInput] = useState('');
@@ -97,7 +98,9 @@ function App() {
   return (
     <main className="App">
       <section className="main-content">
-        <h1>To Do List</h1>
+        <h1>
+          <img src={ToDoImg} alt="" />
+        </h1>
 
         {/* Input field */}
         <div className="input">

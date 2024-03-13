@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Tenor+Sans&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -16,16 +19,18 @@ body {
 .input {
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 h1 {
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: 2.8rem;
+  font-weight: 500;
+  font-family: 'Alexandria', 'Gruppo', Shantell Sans;
   padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 4rem;
 }
-.input {
-  margin-bottom: 2rem;
+h1 img {
+  width: 10rem;
 }
 input {
   padding: 0rem 0.5rem;
@@ -135,7 +140,8 @@ select option {
 
 @media screen and (max-width: 768px) {
   h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
   }
   input {
     width: 32rem;
@@ -145,6 +151,9 @@ select option {
   }
 }
 @media screen and (max-width: 576px) {
+  h1 img {
+    width: 6rem;
+  }
   .add-button {
     width: 2.4rem;
     height: 2.4rem;
@@ -179,9 +188,6 @@ select option {
   }
 }
 @media screen and (max-width: 492px) {
-  h1 {
-    font-size: 1.6rem;
-  }
   input {
     width: 20rem;
     font-size: 1rem;
@@ -192,9 +198,6 @@ select option {
   }
 }
 @media screen and (max-width: 368px) {
-  h1 {
-    font-size: 1.4rem;
-  }
   input {
     width: 18rem;
     font-size: 1rem;
