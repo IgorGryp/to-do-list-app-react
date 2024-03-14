@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Tenor+Sans&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -16,25 +13,27 @@ body {
   display: flex;
   justify-content: center;
 }
-.input {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
+.main-content {
+  width: 50%;
 }
 h1 {
   font-size: 2.8rem;
   font-weight: 500;
-  font-family: 'Alexandria', 'Gruppo', Shantell Sans;
-  padding: 1rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-bottom: 4rem;
 }
 h1 img {
   width: 10rem;
 }
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
 input {
   padding: 0rem 0.5rem;
-  width: 37rem;
+  width: 100%;
   font-size: 1.2rem;
   border-top: none;
   border-left: none;
@@ -52,37 +51,32 @@ input {
   cursor: pointer;
 }
 .add-button-icon {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: white;
+  border-bottom: solid 2px gray;
+  cursor: pointer;
+  color: #ffe180;
 }
 ul {
   width: fit-content;
 }
-.star-button {
-  width: 3rem;
-  height: 3rem;
-  background-color: rgba(0, 0, 0, 0.2);
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .star-button-icon {
   font-size: 1.8rem;
   color: white;
+  cursor: pointer;
+  padding: 0 0.5rem;
 }
 .list-item {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 2px;
+  width: 100%;
 }
 .task {
   list-style: none;
-  width: 31rem;
-  height: 3rem;
+  width: 100%;
+  min-height: 3rem;
   text-align: start;
   color: white;
   background-color: rgba(0, 0, 0, 0.2);
@@ -90,44 +84,31 @@ ul {
   display: flex;
   align-items: center;
 }
-.check-button {
-  width: 3rem;
-  height: 3rem;
+.task p {
+  text-align: start;
+  width: 100%;
+  padding: 0.5rem 0;
+}
+.check-button-icon {
   font-size: 1.8rem;
   color: white;
-  margin: 0;
-  /* border-radius: 0px; */
   cursor: pointer;
-  border: none;
-  outline: none;
-  /* -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none; */
-  background-color: rgba(0, 0, 0, 0.2);
-}
-.delete-button {
-  width: 3rem;
-  height: 3rem;
-  background-color: #ffe180;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0 0.5rem;
 }
 .delete-button-icon {
   font-size: 1.8rem;
-  color: white;
+  color: #ffe180;
+  cursor: pointer;
+  padding: 0 0.5rem;
 }
 .category-selector {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 #category-select {
-  width: 20rem;
+  width: 30%;
   padding: 0.5rem;
   font-size: 1rem;
   font-size-adjust: 0.3;
@@ -140,75 +121,58 @@ select option {
   margin-bottom: 2rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .main-content {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .main-content {
+    width: 70%;
+  }
+  #category-select {
+    width: 40%;
+  }
+}
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 2.2rem;
     margin-bottom: 3rem;
   }
-  input {
-    width: 32rem;
-  }
-  .task {
-    width: 26rem;
-  }
 }
 @media screen and (max-width: 576px) {
+  .main-content {
+    width: 90%;
+  }
   h1 img {
     width: 6rem;
-  }
-  .add-button {
-    width: 2.4rem;
-    height: 2.4rem;
   }
   .add-button-icon {
     font-size: 1.6rem;
   }
-  input {
-    width: 28rem;
-  }
-  .star-button {
-    width: 2.4rem;
-    height: 2.4rem;
-  }
   .star-button-icon {
     font-size: 1.4rem;
-  }
-  .task {
-    width: 24rem;
-    height: 2.4rem;
-  }
-  .check-button {
-    width: 2.4rem;
-    height: 2.4rem;
-  }
-  .delete-button {
-    width: 2.4rem;
-    height: 2.4rem;
   }
   .delete-button-icon {
     font-size: 1.4rem;
   }
 }
 @media screen and (max-width: 492px) {
+  .main-content {
+    width: 95%;
+  }
+  #category-select {
+    width: 60%;
+  }
   input {
-    width: 20rem;
     font-size: 1rem;
   }
   .task {
-    width: 16rem;
     font-size: 1rem;
   }
 }
 @media screen and (max-width: 368px) {
   input {
-    width: 18rem;
     font-size: 1rem;
-  }
-  .task {
-    width: 14rem;
-    font-size: 1rem;
-  }
-  #category-select {
-    width: 18rem;
   }
 }

@@ -6,8 +6,14 @@ import { faTrashCan } from '@fortawesome/free-regular-svg-icons';
 function Todo({ todo, toggleStarIcon, toggleCheckIcon, checkOffTodo, deleteTask }) {
   return (
     <div className="list-item">
-      {/* Star button */}
-      <button className="star-button">
+      {/* Todo item */}
+      <li
+        className="task"
+        style={{
+          textDecoration: todo.completed ? 'line-through' : null,
+        }}
+      >
+        {/* Star button */}
         <FontAwesomeIcon
           onClick={() => toggleStarIcon(todo.id)}
           icon={faStar}
@@ -16,35 +22,29 @@ function Todo({ todo, toggleStarIcon, toggleCheckIcon, checkOffTodo, deleteTask 
             color: todo.star ? '#ffe180' : null,
           }}
         />
-      </button>
-      {/* Todo item */}
-      <li
-        className="task"
-        style={{
-          textDecoration: todo.completed ? 'line-through' : null,
-        }}
-      >
-        {todo.value}
-      </li>
-      {/* Check box */}
-      <button
-        onClick={() => {
-          toggleCheckIcon(todo.id);
-          checkOffTodo(todo.id);
-        }}
-        className="check-button"
-      >
+        {/* To do text */}
+        <p>{todo.value}</p>
+
+        {/* Check box */}
         <FontAwesomeIcon
           icon={faCheck}
+          onClick={() => {
+            toggleCheckIcon(todo.id);
+            checkOffTodo(todo.id);
+          }}
+          className="check-button-icon"
           style={{
             color: todo.check ? '#1f71ff' : null,
           }}
         />
-      </button>
-      {/* Delete  button */}
-      <button className="delete-button" onClick={() => deleteTask(todo.id)}>
-        <FontAwesomeIcon icon={faTrashCan} className="delete-button-icon" />
-      </button>
+
+        {/* Delete  button */}
+        <FontAwesomeIcon
+          icon={faTrashCan}
+          className="delete-button-icon"
+          onClick={() => deleteTask(todo.id)}
+        />
+      </li>
     </div>
   );
 }

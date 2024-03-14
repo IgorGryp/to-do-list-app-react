@@ -115,9 +115,13 @@ function App() {
           />
 
           {/* Add button */}
-          <button className="add-button" onClick={addTaskByButtonClick}>
-            <FontAwesomeIcon icon={faSquarePlus} className="add-button-icon" />
-          </button>
+          {/* <button className="add-button"> */}
+          <FontAwesomeIcon
+            icon={faSquarePlus}
+            className="add-button-icon"
+            onClick={addTaskByButtonClick}
+          />
+          {/* </button> */}
         </div>
 
         {/* Category selector */}
