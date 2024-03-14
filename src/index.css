@@ -46,7 +46,7 @@ input {
   width: 3rem;
   height: 3rem;
   font-weight: bold;
-  background-color: #ffe180;
+  background-color: transparent;
   border: none;
   border-bottom: solid 2px gray;
   cursor: pointer;
@@ -56,7 +56,7 @@ input {
   color: white;
   /* border-bottom: solid 2px gray; */
   cursor: pointer;
-  /* color: #ffe180; */
+  color: #ffe180;
 }
 ul {
   width: fit-content;
