@@ -48,14 +48,15 @@ input {
   font-weight: bold;
   background-color: #ffe180;
   border: none;
+  border-bottom: solid 2px gray;
   cursor: pointer;
 }
 .add-button-icon {
   font-size: 3rem;
   color: white;
-  border-bottom: solid 2px gray;
+  /* border-bottom: solid 2px gray; */
   cursor: pointer;
-  color: #ffe180;
+  /* color: #ffe180; */
 }
 ul {
   width: fit-content;
