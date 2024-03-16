@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquarePlus } from '@fortawesome/free-regular-svg-icons';
-import Todolist from './Todolist';
+import Todolist from './components/Todolist';
 import ToDoImg from './images/todo-img.png';
 
 function App() {
