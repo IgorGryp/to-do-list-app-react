@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(89deg, #a1c4fd 10%, #c2e9fb 90%);
+  /* background-image: linear-gradient(89deg, #8eb6f7 10%, #70d1fd 90%); */
+  background: #153464;
 }
 .App {
   text-align: center;
@@ -38,9 +39,13 @@ input {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: solid 2px gray;
+  border-bottom: solid 2px #ffffff;
   background: rgba(255, 255, 255, 0);
+  color: #ffffff;
   outline: none;
+}
+::placeholder {
+  color: #ffffff;
 }
 .add-button {
   width: 3rem;
@@ -48,7 +53,7 @@ input {
   font-weight: bold;
   background-color: transparent;
   border: none;
-  border-bottom: solid 2px gray;
+  border-bottom: solid 2px #ffffff;
   cursor: pointer;
 }
 .add-button-icon {

@@ -20,6 +20,8 @@ function App() {
     setUserInput(e.target.value);
   }
 
+  console.log(toDoList);
+
   /* ------------------------------------------------------------------------------------------ */
 
   // Adds a new task to the ToDoList array when button is clicked
@@ -136,7 +138,7 @@ function App() {
 
         {/* To Do list */}
         <Todolist
-          toDoList={filteredTodos}
+          filteredTodos={filteredTodos}
           toggleStarIcon={toggleStarIcon}
           toggleCheckIcon={toggleCheckIcon}
           checkOffTodo={checkOffTodo}

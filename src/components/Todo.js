@@ -34,7 +34,7 @@ function Todo({ todo, toggleStarIcon, toggleCheckIcon, checkOffTodo, deleteTask 
           }}
           className="check-button-icon"
           style={{
-            color: todo.check ? '#1f71ff' : null,
+            color: todo.check ? '#e33131' : null,
           }}
         />
 
