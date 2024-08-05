@@ -103,7 +103,9 @@ ul {
 }
 .delete-button-icon {
   font-size: 1.8rem;
-  color: #ffe180;
+  color: #71ff78;
+  color: #ff9090;
+  /* color: #ff6f15; */
   cursor: pointer;
   padding: 0 0.5rem;
 }
@@ -111,17 +113,16 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* flex-direction: column; */
 }
 #category-select {
   width: 30%;
-  padding: 0.5rem;
+  padding: 0.4rem;
   font-size: 1rem;
-  font-size-adjust: 0.3;
   margin-bottom: 2rem;
 }
 select option {
   width: 20rem;
+  padding: 0.4rem;
 }
 .todo-list {
   margin-bottom: 2rem;
